@@ -43,24 +43,10 @@ These datasets are merged into a single DataFrame for unified analysis.
 
 ---
 
-## 🧪 How to Run
 
-### Install dependencies:
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost
-
-
-#🔥 Fire Type Classification - Week 2 ML Project: Advanced Preprocessing & Spatial Analysis
+# 🔥 Fire Type Classification - Week 2 ML Project: Advanced Preprocessing & Spatial Analysis
 This project builds upon Week 1's foundational data exploration by implementing more advanced data preprocessing techniques, including detailed distribution analysis, outlier treatment, temporal feature engineering, categorical encoding, numerical scaling, and crucial handling of imbalanced datasets using SMOTE. It also introduces spatial visualization with Folium.
 
-## 📁 Datasets
-dataset1.csv
-
-dataset2.csv
-
-dataset3.csv
-
-These datasets are merged into a single DataFrame for unified analysis.
 
 ## 📌 Key Steps
 ✅ Libraries Used
