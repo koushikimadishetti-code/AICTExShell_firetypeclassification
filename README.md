@@ -1,5 +1,56 @@
-# AICTExShell_week1_fireclassification
+# AICTExShellxEdunetFoundation_fireclassification
+🔥 Classification of Fire Types in India Using MODIS Satellite Data(Deforestation Detection)
+This repository contains the complete workflow for building and deploying a machine learning model to classify fire types in India using MODIS satellite data provided by NASA.
+📁 Repository Contents
+Classification_of_Fire_Types_in_India_Using_MODIS_Satellite_Data_koushiki.ipynb
+Jupyter notebook containing the full code for preprocessing, model training, and evaluation.
 
+Datasets Used for Training:
+
+MODIS_NASA_INDIA_2021_dataset
+
+MODIS_NASA_INDIA_2022_dataset
+
+MODIS_NASA_INDIA_2023_dataset
+
+app.py
+Streamlit-based frontend application that allows users to predict fire types based on satellite readings using the best-trained model.
+
+scaler.pkl
+Serialized Scikit-learn scaler used to preprocess user input before prediction.
+
+🚀 Deployment
+The frontend is built using Streamlit. Run the app with the following command:
+streamlit run app.py
+Note:Make sure scaler.pkl and the model file are in the same directory as app.py.
+
+🧠 Best Model
+The best-trained model is not included in the repository due to its large size. You can download it using the link below:
+
+👉https://drive.google.com/file/d/1G4i76hv1hauLdDbdld-kgdW7GedNdfzY/view?usp=sharing
+
+## 🧪 How to Run
+▶️ Step 1:Install dependencies:
+
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost statsmodels imbalanced-learn folium
+
+
+▶️ Step 2: Run the Streamlit App
+Once the dependencies are installed, you can launch the web application using:
+
+streamlit run app.py
+
+Note: Make sure the following files are in the same directory:
+
+->app.py
+
+->best_fire_detection_model.pkl
+
+->scaler.pkl
+
+
+
+# AICTExShellxEdunetFoundation_fireclassification
 # 🔥 Fire Type Classification - Week 1 ML Project
 
 This project is an introductory machine learning exercise involving data preprocessing, exploration, and visualization using fire incident data. It combines multiple datasets and investigates the distribution of various features to prepare for classification tasks.
@@ -141,8 +192,47 @@ Interactive Fire Map: Used folium to create an interactive map of India, plottin
 ## ⚖️ Imbalanced Data Handling
 SMOTE (Synthetic Minority Over-sampling Technique): Applied SMOTE to the training data (X, y) to synthesize new examples for minority classes. This balances the class distribution, which is crucial for training robust machine learning models on imbalanced datasets. The distribution of the target variable after SMOTE is printed to confirm the balancing.
 
-## 🧪 How to Run
-Install dependencies:
 
-pip install numpy pandas matplotlib seaborn scikit-learn xgboost statsmodels imbalanced-learn folium
+# 🔥 Fire Type Classification - Week 3 work for this ML Project
+In Week 3, I focused on building, evaluating, and deploying the machine learning model for fire type classification. The key tasks completed include:
+🔄 Data Splitting:
+
+Split the resampled dataset into training and testing sets using train_test_split with stratification to preserve class balance.
+
+🧠 Model Training & Evaluation:
+
+Trained and evaluated multiple classification algorithms:
+
+Logistic Regression
+
+Decision Tree Classifier
+
+Random Forest Classifier
+
+K-Nearest Neighbors Classifier
+
+Evaluated models using:
+
+Accuracy Score
+
+Classification Report
+
+Confusion Matrix
+
+🏆 Model Selection:
+
+Random Forest was identified as the best-performing model based on accuracy.
+
+💾 Model & Scaler Export:
+
+Saved the best-trained model as best_fire_detection_model.pkl.
+
+Saved the preprocessing StandardScaler as scaler.pkl.
+
+🌐 Streamlit App Development:
+
+Created a user-friendly Streamlit web application (app.py) for deploying the model.
+
+The app takes six input features from MODIS satellite data and predicts the fire type using the trained model.
+This concludes a full cycle from model training to basic deployment.
 
