@@ -1,8 +1,12 @@
 # AICTExShellxEdunetFoundation_fireclassification
-🔥 Classification of Fire Types in India Using MODIS Satellite Data(Deforestation Detection)
+🔥 Classification of Fire Types in India Using MODIS Satellite Data(Deforestation Detection).
+
 This repository contains the complete workflow for building and deploying a machine learning model to classify fire types in India using MODIS satellite data provided by NASA.
+
 📁 Repository Contents
+
 Classification_of_Fire_Types_in_India_Using_MODIS_Satellite_Data_koushiki.ipynb
+
 Jupyter notebook containing the full code for preprocessing, model training, and evaluation.
 
 Datasets Used for Training:
